@@ -13,8 +13,8 @@ if not INPUT_IMAGE_PATH:
     print(f"Using default path: {INPUT_IMAGE_PATH}")
 
 # Template paths (relative to script directory)
-SUNGLASSES_PATH = os.path.join(script_dir, "sunglasses_template.png")
-MOUSTACHE_PATH = os.path.join(script_dir, "moustache_template.png")
+SUNGLASSES_PATH = os.path.join(script_dir, "templates", "sunglasses_template.png")
+MOUSTACHE_PATH = os.path.join(script_dir, "templates", "moustache_template.png")
 OUTPUT_CSV_PATH = os.path.join(script_dir, "output.csv")
 OUTPUT_IMAGE_PATH = os.path.join(script_dir, "output_filtered.jpg")
 
@@ -39,9 +39,9 @@ if moustache_template is None:
     print("Moustache filter will be skipped.")
 
 # Load Haar cascade files for face and facial keypoint detection
-face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
-eye_cascade = cv2.CascadeClassifier("haarcascade_eye.xml") 
-nose_cascade = cv2.CascadeClassifier("haarcascade_mcs_nose.xml")
+face_cascade = cv2.CascadeClassifier("models/haarcascade_frontalface_alt.xml")
+eye_cascade = cv2.CascadeClassifier("models/haarcascade_eye.xml") 
+nose_cascade = cv2.CascadeClassifier("models/haarcascade_mcs_nose.xml")
 
 # Validate cascade files loaded
 if face_cascade.empty():

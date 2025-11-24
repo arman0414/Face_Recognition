@@ -36,7 +36,7 @@ print("Camera initialized successfully!")
 print("Press 'q' to quit and save data")
 
 # Face Detection
-face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
+face_cascade = cv2.CascadeClassifier("models/haarcascade_frontalface_alt.xml")
 
 # Validate cascade file loaded
 if face_cascade.empty():
