@@ -101,35 +101,6 @@ prediction = mode(labels of 5 nearest neighbors)
 
 ---
 
-## 📂 Project Structure
-
-```
-Face_Recognition/
-├── face_data_collect.py       # Data collection module
-├── face_recognition.py         # Real-time recognition engine
-├── snap.py                     # AR filter application
-├── models/                     # Haar Cascade XML files
-├── templates/                  # Filter images
-├── docs/                       # Documentation guides
-├── requirements.txt            # Dependencies
-└── README.md                   # This file
-```
-
----
-
-## 🔧 Configuration
-
-Adjustable parameters in Python files:
-
-```python
-K_NEIGHBORS = 5         # Number of neighbors (3-7 recommended)
-FACE_SIZE = 100         # Face normalization size
-SAMPLE_RATE = 10        # Frame collection frequency
-SCALE_FACTOR = 1.3      # Detection sensitivity
-```
-
----
-
 ## 📊 Features
 
 ✅ Custom KNN implementation from scratch (no sklearn)  
@@ -142,45 +113,9 @@ SCALE_FACTOR = 1.3      # Detection sensitivity
 
 ---
 
-## 🛠️ Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| Camera not working | Check permissions, try `VideoCapture(1)` |
-| No faces detected | Improve lighting, face camera directly |
-| Poor accuracy | Collect more samples (50+), adjust `K_NEIGHBORS` |
-| Import error | `pip install --upgrade opencv-python numpy` |
-
----
-
-## 📝 Requirements
-
-- Python 3.7+
-- Webcam (for real-time recognition)
-- 4GB RAM minimum
-- OpenCV 4.5+
-- NumPy 1.19+
-
----
-
 ## 📄 License
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
-
----
-
-## 👤 Author
-
-**Arman Malik**
-- GitHub: [@arman0414](https://github.com/arman0414)
-
----
-
-## 🔗 Documentation
-
-- [Setup Guide](docs/SETUP_GUIDE.md) - Detailed installation instructions
-- [API Reference](docs/API_REFERENCE.md) - Technical documentation
-- [Quick Reference](docs/QUICK_REFERENCE.md) - Command cheat sheet
+MIT License - see [LICENSE](LICENSE) file.
 
 ---
 
