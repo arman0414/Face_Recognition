@@ -82,35 +82,6 @@ distance = √Σ(pixel_test - pixel_train)²
 prediction = mode(labels of 5 nearest neighbors)
 ```
 
-### Key Technologies
-
-| Component | Technology |
-|-----------|-----------|
-| **Language** | Python 3.7+ |
-| **Computer Vision** | OpenCV (cv2) |
-| **Numerical Computing** | NumPy |
-| **Face Detection** | Haar Cascade Classifiers |
-| **Classification** | K-Nearest Neighbors (custom implementation) |
-| **Storage** | Binary serialization (.npy) |
-
-### Performance
-- **Accuracy:** 85-95% (depends on training data quality)
-- **Speed:** 30 FPS real-time processing
-- **Training Time:** Instant (no training phase required)
-- **Storage:** ~1-2 MB per person
-
----
-
-## 📊 Features
-
-✅ Custom KNN implementation from scratch (no sklearn)  
-✅ Real-time video processing at 30 FPS  
-✅ Multi-person recognition support  
-✅ Automated data collection pipeline  
-✅ AR filters with alpha channel blending  
-✅ Cross-platform compatible  
-✅ Production-grade error handling  
-
 ---
 
 ## 📄 License
